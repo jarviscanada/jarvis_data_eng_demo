@@ -1,13 +1,13 @@
 package ca.jrvs.practice.dataStructure.list;
 
-public class LinkedJList<E> implements JLists<E> {
+public class ArrayJList<E> implements JLists<E> {
 
   /**
    * Appends the specified element to the end of this list (optional
    * operation).
    *
    * @param e element to be appended to this list
-   * @return <tt>true</tt>
+   * @return <tt>true</tt> (as specified by {@link Collection#add})
    * @throws NullPointerException if the specified element is null and this
    *         list does not permit null elements
    */
