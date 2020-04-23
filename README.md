@@ -6,7 +6,6 @@ Donec fermentum, lectus tempor lobortis egestas, dolor dolor rhoncus justo, id p
 
 **Proficient:** Java, Bash, SQL, Agile/Scrum
 
-
 **Competent:** 
 
 **Familiar:** 
