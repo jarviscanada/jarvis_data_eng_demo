@@ -7,7 +7,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-public class OddEvenTest {
+public class OddEvenUnitTest {
 
   @BeforeClass
   public static void classSetUp() throws Exception {
