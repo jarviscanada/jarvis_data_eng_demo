@@ -1,20 +1,27 @@
 package ca.jrvs.practice.dataStructure.list;
 
-public class LinkedJList<E> implements JLists<E> {
+import java.util.Collection;
+
+/**
+ * This is a simplified version of JDK List (java.util.List)
+ * JavaDoc is also copied from JDK (java.util.List)
+ *
+ * @param <E> the type of elements in this list
+ *
+ * @see java.util.List for JDK full version of List
+ */
+interface JList<E> {
 
   /**
    * Appends the specified element to the end of this list (optional
    * operation).
    *
    * @param e element to be appended to this list
-   * @return <tt>true</tt>
+   * @return <tt>true</tt> (as specified by {@link Collection#add})
    * @throws NullPointerException if the specified element is null and this
    *         list does not permit null elements
    */
-  @Override
-  public boolean add(E e) {
-    return false;
-  }
+  boolean add(E e);
 
   /**
    * Returns an array containing all of the elements in this list in proper
@@ -26,29 +33,20 @@ public class LinkedJList<E> implements JLists<E> {
    * @return an array containing all of the elements in this list in proper
    *         sequence
    */
-  @Override
-  public Object[] toArray() {
-    return new Object[0];
-  }
+  Object[] toArray();
 
   /**
    * The size of the ArrayList (the number of elements it contains).
    *
    */
-  @Override
-  public int size() {
-    return 0;
-  }
+  public int size();
 
   /**
    * Returns <tt>true</tt> if this list contains no elements.
    *
    * @return <tt>true</tt> if this list contains no elements
    */
-  @Override
-  public boolean isEmpty() {
-    return false;
-  }
+  public boolean isEmpty();
 
   /**
    * Returns the index of the first occurrence of the specified element
@@ -56,12 +54,8 @@ public class LinkedJList<E> implements JLists<E> {
    * More formally, returns the lowest index <tt>i</tt> such that
    * <tt>(o==null&nbsp;?&nbsp;get(i)==null&nbsp;:&nbsp;o.equals(get(i)))</tt>,
    * or -1 if there is no such index.
-   * @param o
    */
-  @Override
-  public int indexOf(Object o) {
-    return 0;
-  }
+  int indexOf(Object o);
 
   /**
    * Returns <tt>true</tt> if this list contains the specified element.
@@ -74,10 +68,8 @@ public class LinkedJList<E> implements JLists<E> {
    * @throws NullPointerException if the specified element is null and this
    *         list does not permit null elements
    */
-  @Override
-  public boolean contains(Object o) {
-    return false;
-  }
+  boolean contains(Object o);
+
 
   /**
    * Returns the element at the specified position in this list.
@@ -87,10 +79,7 @@ public class LinkedJList<E> implements JLists<E> {
    * @throws IndexOutOfBoundsException if the index is out of range
    *         (<tt>index &lt; 0 || index &gt;= size()</tt>)
    */
-  @Override
-  public E get(int index) {
-    return null;
-  }
+  E get(int index);
 
   /**
    * Removes the element at the specified position in this list.
@@ -101,17 +90,12 @@ public class LinkedJList<E> implements JLists<E> {
    * @return the element that was removed from the list
    * @throws IndexOutOfBoundsException {@inheritDoc}
    */
-  @Override
-  public E remove(int index) {
-    return null;
-  }
+  E remove(int index);
 
   /**
    * Removes all of the elements from this list (optional operation).
    * The list will be empty after this call returns.
    */
-  @Override
-  public void clear() {
-
-  }
+  void clear();
 }
+
